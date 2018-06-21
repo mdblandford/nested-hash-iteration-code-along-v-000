@@ -9,10 +9,10 @@ def remove_strawberry(contacts)
        name: "Freddy",
        email: "freddy@mercury.com",
        favorite_ice_cream_flavors: ["strawberry", "cookie dough", "mint chip"]}}
-   contacts.each do |person, data|
-     data.each do |attribute, item|
-       if attribute == :favorite_ice_cream_flavors
-         item.delete_if {|flavor| flavor == "strawberry"}
+   contacts.each do |a, b|
+     b.each do |c, d|
+       if c == :favorite_ice_cream_flavors
+         item.delete_if {|d| d == "strawberry"}
        end
      end
    end
