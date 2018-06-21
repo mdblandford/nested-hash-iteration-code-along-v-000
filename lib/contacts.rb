@@ -12,7 +12,7 @@ def remove_strawberry(contacts)
    contacts.each do |a, b|
      b.each do |c, d|
        if c == :favorite_ice_cream_flavors
-         item.delete_if {|d| d == "strawberry"}
+         item.delete_if {|flavor| flavor == "strawberry"}
        end
      end
    end
